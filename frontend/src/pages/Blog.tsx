@@ -8,7 +8,7 @@ export const Blog = () => {
     const { id } = useParams();
     const { loading, blog } = useBlog(Number(id || ""));
 
-    if (loading) {
+    if (loading || !blog) {
         return <div>
             <Appbar /> 
             <Spinner />

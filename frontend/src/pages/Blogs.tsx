@@ -1,7 +1,7 @@
 import { Appbar } from "../components/Appbar"
 import { BlogCard } from "../components/BlogCard"
 import { useBlogs } from "../hooks";
-import { Spinner, Skeleton } from "../components/GenericComponents";
+import { Skeleton } from "../components/GenericComponents";
 
 export const Blogs = () => {
     const { loading, blogs } = useBlogs();
